@@ -2,6 +2,9 @@ name: Build repository
 
 on:
     workflow_dispatch:
+    repository_dispatch:
+        types:
+            - rebuild-repository
 
 permissions:
     contents: read
