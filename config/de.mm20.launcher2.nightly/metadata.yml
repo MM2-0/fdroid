@@ -1,0 +1,15 @@
+name: Kvaesitso Nightly
+summary: A search-focused, free and open source launcher for Android
+description: Nightly builds. May contain serious bugs. Not recommended for day-to-day use.
+license: GPL-3.0-or-later
+author:
+    name: MM20
+website: https://kvaesitso.mm20.de
+source: https://github.com/MM2-0/Kvaesitso
+issues: https://github.com/MM2-0/Kvaesitio/issues
+translation: https://i18n.mm20.de/engage/kvaesitso/
+donate: https://github.com/sponsors/MM2-0
+categories:
+    - System
+antiFeatures:
+    - NonFreeNet

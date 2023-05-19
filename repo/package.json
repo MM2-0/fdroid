@@ -1,0 +1,25 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "author": "MM20",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc && node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.7",
+    "@types/yauzl": "^2.10.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-apk": "^1.2.1",
+    "octokit": "^2.0.14",
+    "yaml": "^2.2.2",
+    "yauzl": "^2.10.0"
+  },
+  "type": "module"
+}

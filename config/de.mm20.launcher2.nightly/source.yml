@@ -1,0 +1,4 @@
+type: gh_actions
+owner: MM2-0
+repo: Kvaesitso
+action: 'build-nightly.yml'

@@ -1,0 +1,52 @@
+name: Build repository
+
+on:
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: latest
+            - name: Setup Python
+              uses: actions/setup-python@v4
+              with:
+                  python-version: '3.11'
+            - name: Setup Android SDK
+              uses: android-actions/setup-android@v2
+            - name: Setup F-Droid repo
+              working-directory: repo
+              run: scripts/setup.sh
+              env:
+                  FDROID_KEYSTORE_BASE64: ${{ secrets.FDROID_KEYSTORE_BASE64 }}
+                  FDROID_KEYSTORE_PASSWORD: ${{ secrets.FDROID_KEYSTORE_PASSWORD }}
+                  FDROID_KEY_PASSWORD: ${{ secrets.FDROID_KEY_PASSWORD }}
+                  FDROID_KEY_ALIAS: ${{ secrets.FDROID_KEY_ALIAS }}
+                  FDROID_KEY_DNAME: ${{ secrets.FDROID_KEY_DNAME }}
+            - name: Populate F-Droid repo
+              working-directory: repo
+              run: scripts/populate.sh
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            - name: Build F-Droid repo
+              working-directory: repo
+              run: scripts/build.sh
+            - name: Build frontend
+              working-directory: frontend
+              run: scripts/build.sh
+              env:
+                  FDROID_FINGERPRINT: ${{ secrets.FDROID_FINGERPRINT }}
+            - name: Prepare deployment
+              run: mv frontend/build out && mv repo/tmp/repo out/
+            - name: Upload
+              uses: actions/upload-pages-artifact@v1
+              with:
+                  path: 'out'
+            - name: Deploy
+              id: deployment
+              uses: actions/deploy-pages@v1

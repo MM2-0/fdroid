@@ -1,0 +1,138 @@
+@import './fonts/outfit';
+@import './fonts/roboto';
+
+$font-family-heading: 'Outfit', sans-serif;
+$font-family-body: 'Roboto', sans-serif;
+
+:root {
+	font-family: $font-family-body;
+}
+
+.display-large {
+	font-family: $font-family-heading;
+	font-weight: 700;
+	font-size: 57px;
+	line-height: 64px;
+	letter-spacing: 0;
+}
+
+.display-medium {
+	font-family: $font-family-heading;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 52px;
+	letter-spacing: 0;
+}
+
+.display-small {
+	font-family: $font-family-heading;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 44px;
+	letter-spacing: 0;
+}
+
+.headline-large {
+	font-family: $font-family-heading;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 40px;
+	letter-spacing: 0px;
+}
+
+.headline-medium {
+	font-family: $font-family-heading;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 36px;
+	letter-spacing: 0px;
+}
+
+.headline-small {
+	font-family: $font-family-heading;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: 0px;
+}
+
+.title-large {
+	font-family: $font-family-heading;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 28px;
+	letter-spacing: 0px;
+}
+
+.title-medium {
+	font-family: $font-family-heading;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+}
+
+.title-small {
+	font-family: $font-family-heading;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.1px;
+}
+
+.label-large {
+	font-family: $font-family-heading;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.1px;
+}
+
+.label-medium {
+	font-family: $font-family-heading;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.5px;
+}
+
+.label-small {
+	font-family: $font-family-heading;
+	font-weight: 500;
+	font-size: 11px;
+	line-height: 6px;
+	letter-spacing: 0.5px;
+}
+
+.body-large {
+	font-family: $font-family-body;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+}
+
+.body-medium {
+	font-family: $font-family-body;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.25px;
+}
+
+.body-small {
+	font-family: $font-family-body;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
