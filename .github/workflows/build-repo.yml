@@ -48,7 +48,7 @@ jobs:
               working-directory: frontend
               run: scripts/build.sh
               env:
-                  FDROID_FINGERPRINT: ${{ secrets.FDROID_FINGERPRINT }}
+                  PUBLIC_FDROID_FINGERPRINT: ${{ secrets.FDROID_FINGERPRINT }}
             - name: Prepare deployment
               run: mv frontend/build out && mv repo/tmp/repo out/
             - name: Upload
