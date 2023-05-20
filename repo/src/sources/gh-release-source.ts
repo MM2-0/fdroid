@@ -45,11 +45,18 @@ export class GhReleaseSource implements ReleaseSource {
 				`tmp/repo/${apkInfo.package}-${apkInfo.versionName}.apk`,
 			)
 
+			await fs.utimes(
+				`tmp/repo/${apkInfo.package}-${apkInfo.versionName}.apk`,
+				new Date(release.created_at),
+				new Date(release.created_at),
+			)
+
 			result.push({
 				version: apkInfo.versionName,
 				versionCode: apkInfo.versionCode,
 				changelog: release.body ?? '',
 				packageName: apkInfo.package,
+				releaseDate: new Date(release.created_at),
 			})
 		}
 

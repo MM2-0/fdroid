@@ -4,4 +4,4 @@
 
 cd tmp
 source venv/bin/activate
-fdroid update
+fdroid update --use-date-from-apk

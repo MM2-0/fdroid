@@ -3,4 +3,5 @@ export interface Release {
 	version: string
 	versionCode: number
 	changelog: string
+	releaseDate: Date
 }

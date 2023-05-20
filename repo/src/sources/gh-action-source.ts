@@ -122,6 +122,12 @@ export class GhActionSource implements ReleaseSource {
 				`tmp/repo/${apkInfo.package}-${version}.apk`,
 			)
 
+			await fs.utimes(
+				`tmp/repo/${apkInfo.package}-${version}.apk`,
+				new Date(artifact.created_at ?? 0),
+				new Date(artifact.created_at ?? 0),
+			)
+
 			if (
 				releases.some(
 					(it) =>
@@ -149,6 +155,7 @@ export class GhActionSource implements ReleaseSource {
 				version,
 				versionCode: apkInfo.versionCode,
 				packageName: apkInfo.package,
+				releaseDate: new Date(artifact.created_at ?? 0),
 			})
 		}
 
