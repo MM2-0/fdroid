@@ -13,21 +13,21 @@
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-static": "^2.0.2",
-		"@sveltejs/kit": "^1.18.0",
-		"@types/node": "^20.2.1",
-		"prettier": "^2.6.2",
-		"prettier-plugin-svelte": "^2.10.0",
-		"sass": "^1.62.1",
-		"svelte": "^3.59.1",
-		"svelte-check": "^2.7.1",
-		"svelte-preprocess": "^5.0.3",
-		"tslib": "^2.5.2",
-		"typescript": "^5.0.4",
-		"vite": "^4.3.8"
+		"@sveltejs/adapter-static": "^2.0.3",
+		"@sveltejs/kit": "^1.26.0",
+		"@types/node": "^20.8.7",
+		"prettier": "^3.0.3",
+		"prettier-plugin-svelte": "^3.0.3",
+		"sass": "^1.69.4",
+		"svelte": "^4.2.2",
+		"svelte-check": "^3.5.2",
+		"svelte-preprocess": "^5.0.4",
+		"tslib": "^2.6.2",
+		"typescript": "^5.2.2",
+		"vite": "^4.5.0"
 	},
 	"type": "module",
 	"dependencies": {
-		"material-symbols": "^0.5.5"
+		"material-symbols": "^0.13.1"
 	}
 }
