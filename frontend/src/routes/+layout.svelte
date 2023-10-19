@@ -1,9 +1,6 @@
 <script lang="ts">
 	import 'material-symbols'
 	import '../styles/index.scss'
-	import type { PageData } from './$types'
-
-	export let data: PageData
 </script>
 
 <main>
