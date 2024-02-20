@@ -1,0 +1,14 @@
+name: Kvaesitso Plugin for OpenWeatherMap
+summary: OpenWeatherMap provider for Kvaesitso
+license: Apache-2.0
+author:
+    name: MM20
+website: https://kvaesitso.mm20.de
+source: https://github.com/Kvaesitso/Plugin-OpenWeatherMap
+issues: https://github.com/MM2-0/Kvaesitso/issues
+translation: https://i18n.mm20.de/engage/kvaesitso/
+donate: https://github.com/sponsors/MM2-0
+categories:
+    - System
+antiFeatures:
+    - NonFreeNet
