@@ -1,11 +1,11 @@
-name: Kvaesitso OneDrive plugin
-summary: A plugin for Kvaesitso that adds OneDrive search support
+name: Kvaesitso Foursquare plugin
+summary: Foursquare places search for Kvaesitso
 license: Apache-2.0
 author:
     name: MM20
 website: https://kvaesitso.mm20.de
-source: https://github.com/Kvaesitso/Plugin-OneDrive
-issues: https://github.com/Kvaesitso/Plugin-OneDrive/issues
+source: https://github.com/Kvaesitso/Plugin-Foursquare
+issues: https://github.com/Kvaesitso/Plugin-Foursquare/issues
 translation: https://i18n.mm20.de/engage/kvaesitso/
 donate: https://github.com/sponsors/MM2-0
 categories:
