@@ -1,5 +1,5 @@
 name: Public transport plugin for Kvaesitso
-summary: This plugin enables querying your local public transport providers for stops and departures near you.
+summary: Public transport data from several sources
 license: GPL-3.0
 author:
     name: Sir-Photch
