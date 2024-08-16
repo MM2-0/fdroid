@@ -10,3 +10,5 @@ translation: https://i18n.mm20.de/engage/kvaesitso/
 donate: https://github.com/sponsors/MM2-0
 categories:
     - System
+antiFeatures:
+    - NonFreeNet
