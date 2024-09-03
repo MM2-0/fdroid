@@ -8,7 +8,7 @@ cd tmp
 
 python -m venv venv
 source venv/bin/activate
-pip install "fdroidserver"
+pip install "fdroidserver" "androguard >= 4.1.2"
 fdroid init
 mkdir metadata
 echo $FDROID_KEYSTORE_BASE64 | base64 -di > "keystore.p12"
