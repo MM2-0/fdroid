@@ -15,7 +15,6 @@ async function main() {
 	const sources = await getSources()
 
 	for (const source of sources) {
-		console.log('Getting releases from source', source)
 		const releases = await getReleasesFromSource(source)
 		for (const release of releases) {
 			await writeMeta(release)
