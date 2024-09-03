@@ -75,6 +75,7 @@ export class GhActionSource implements ReleaseSource {
 
 		for (let i = 0; i < validArtifacts.length; i++) {
 			const artifact = validArtifacts[i].data.artifacts[0]
+			console.log('GitHub Action: downloading artifact', artifact)
 			const lastCommitSha = artifact.workflow_run?.head_sha
 			const lastCommitIndex = commits.findIndex(
 				(commit) => commit.sha === lastCommitSha,
