@@ -16,9 +16,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
             - name: Setup Node.js
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
               with:
                   node-version: lts/*
             - name: Setup Python
@@ -26,7 +26,7 @@ jobs:
               with:
                   python-version: '3.11'
             - name: Setup Android SDK
-              uses: android-actions/setup-android@v2
+              uses: android-actions/setup-android@v3
             - name: Setup F-Droid repo
               working-directory: repo
               run: scripts/setup.sh
@@ -52,7 +52,7 @@ jobs:
             - name: Prepare deployment
               run: mv frontend/build out && mv repo/tmp/repo out/
             - name: Upload
-              uses: actions/upload-pages-artifact@v1
+              uses: actions/upload-pages-artifact@v3
               with:
                   path: 'out'
             - name: Deploy
