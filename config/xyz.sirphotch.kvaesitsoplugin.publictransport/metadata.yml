@@ -2,10 +2,10 @@ name: Public transport plugin for Kvaesitso
 summary: Public transport data from several sources
 license: GPL-3.0
 author:
-    name: Sir-Photch
-website: https://github.com/Sir-Photch/KvaesitsoPlugin-PublicTransport
-source: https://github.com/Sir-Photch/KvaesitsoPlugin-PublicTransport
-issues: https://github.com/Sir-Photch/KvaesitsoPlugin-PublicTransport/issues
+    name: shtrophic
+website: https://github.com/shtrophic/KvaesitsoPlugin-PublicTransport
+source: https://github.com/shtrophic/KvaesitsoPlugin-PublicTransport
+issues: https://github.com/shtrophic/KvaesitsoPlugin-PublicTransport/issues
 translation: https://hosted.weblate.org/engage/kvaesitsoplugin-publictransport/
 categories:
     - System

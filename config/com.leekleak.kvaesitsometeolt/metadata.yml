@@ -1,0 +1,11 @@
+name: Meteo.lt plugin for Kvaesitso
+summary: Weather data for Lithuania from Meteo.lt
+author:
+    name: leekleak
+website: https://github.com/leekleak/KvaesitsoMeteoLT
+source: https://github.com/leekleak/KvaesitsoMeteoLT
+issues: https://github.com/leekleak/KvaesitsoMeteoLT/issues
+categories:
+    - System
+antiFeatures:
+    - NonFreeNet
