@@ -115,6 +115,7 @@
 		width: 128px;
 		height: 128px;
 		margin-right: 2rem;
+		border-radius: 24px;
 	}
 
 	.top-section {
@@ -131,7 +132,11 @@
 					font-size: inherit;
 					cursor: pointer;
 					color: var(--color-primary);
-					font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 64;
+					font-variation-settings:
+						'FILL' 0,
+						'wght' 700,
+						'GRAD' 0,
+						'opsz' 64;
 				}
 			}
 		}
