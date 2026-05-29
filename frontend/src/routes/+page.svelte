@@ -115,7 +115,8 @@
 		width: 128px;
 		height: 128px;
 		margin-right: 2rem;
-		border-radius: 24px;
+		border-radius: var(--radius-small);
+		border: solid 1px var(--color-outline-variant);
 	}
 
 	.top-section {
