@@ -1,10 +1,10 @@
 import { config as dotenv } from 'dotenv'
-import type { ReleaseSource } from './sources/release-source'
+import type { ReleaseSource } from './sources/release-source.js'
 import { GhActionSource } from './sources/gh-action-source.js'
-import { Release } from './release'
+import { Release } from './release.js'
 import fs from 'fs/promises'
 import YAML from 'yaml'
-import type { AppMeta } from './app-meta'
+import type { AppMeta } from './app-meta.js'
 import { GhReleaseSource } from './sources/gh-release-source.js'
 
 dotenv()
@@ -37,7 +37,7 @@ async function generateConfig() {
 		await fs.stat('../config/icon.png')
 		await fs.copyFile('../config/icon.png', 'tmp/icon.png')
 		fdroidConfig.repo_icon = 'icon.png'
-	} catch (e: any) {}
+	} catch (e: any) { }
 
 	await fs.writeFile('tmp/config.yml', YAML.stringify(fdroidConfig))
 }

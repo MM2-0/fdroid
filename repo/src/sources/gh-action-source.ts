@@ -1,6 +1,6 @@
 import { Octokit } from 'octokit'
-import type { Release } from '../release'
-import type { ReleaseSource } from './release-source'
+import type { Release } from '../release.js'
+import type { ReleaseSource } from './release-source.js'
 import { downloadBinary } from '../utils/download.js'
 import { extractZip } from '../utils/extract.js'
 import { getApkInfo } from '../utils/apk.js'
@@ -47,14 +47,14 @@ export class GhActionSource implements ReleaseSource {
 		const commits =
 			validRuns.length >= 2
 				? (
-						await this.client.rest.repos.compareCommitsWithBasehead(
-							{
-								owner: this.options.owner,
-								repo: this.options.repo,
-								basehead: `${firstRun.head_sha}...${latestRun.head_sha}`,
-							},
-						)
-				  ).data.commits
+					await this.client.rest.repos.compareCommitsWithBasehead(
+						{
+							owner: this.options.owner,
+							repo: this.options.repo,
+							basehead: `${firstRun.head_sha}...${latestRun.head_sha}`,
+						},
+					)
+				).data.commits
 				: []
 
 		const artifacts = await Promise.all(
@@ -148,9 +148,8 @@ export class GhActionSource implements ReleaseSource {
 						.map((commit) => {
 							const msg = commit.commit.message
 							const lines = msg.split('\n')
-							return `* (${commit.sha.substring(0, 7)}) ${
-								lines[0]
-							}\n`
+							return `* (${commit.sha.substring(0, 7)}) ${lines[0]
+								}\n`
 						})
 						.join('') || 'No changes',
 				version,

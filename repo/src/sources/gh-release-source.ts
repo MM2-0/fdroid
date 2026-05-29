@@ -1,6 +1,6 @@
 import { Octokit } from 'octokit'
-import { Release } from '../release'
-import { ReleaseSource } from './release-source'
+import { Release } from '../release.js'
+import { ReleaseSource } from './release-source.js'
 import { downloadBinary } from '../utils/download.js'
 import { getApkInfo } from '../utils/apk.js'
 import fs from 'fs/promises'
