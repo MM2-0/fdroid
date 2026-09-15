@@ -24,9 +24,11 @@ jobs:
             - name: Setup Python
               uses: actions/setup-python@v7
               with:
-                  python-version: '3.11'
+                  python-version: '3.14'
             - name: Setup Android SDK
               uses: android-actions/setup-android@v4
+              with:
+                  packages: 'platform-tools'
             - name: Setup F-Droid repo
               working-directory: repo
               run: scripts/setup.sh
